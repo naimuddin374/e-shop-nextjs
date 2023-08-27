@@ -4,15 +4,15 @@ import Client_logo from "../components/client_logo";
 import DisplayView from "../components/display_view";
 import SlideBanner from "../components/slide_banner";
 
-import ProductImage from "../assets/img/GoldPhone-1-300x300 1.png";
-import ProductImage3 from "../assets/img/prodcut6 1.png";
-import ProductImage4 from "../assets/img/product-39 1.png";
-import ProductImage2 from "../assets/img/widetv-300x300 1.png";
+import ProductImage from "../public/images/GoldPhone-1-300x300 1.png";
+import ProductImage3 from "../public/images/prodcut6 1.png";
+import ProductImage4 from "../public/images/product-39 1.png";
+import ProductImage2 from "../public/images/widetv-300x300 1.png";
 
-import ProductImage1 from "../assets/img/mobile.jpg";
-import ProductImage21 from "../assets/img/mobile1.jpg";
-import ProductImage31 from "../assets/img/radio1.jpg";
-import ProductImage41 from "../assets/img/tv.jpeg";
+import ProductImage1 from "../public/images/mobile.jpg";
+import ProductImage21 from "../public/images/mobile1.jpg";
+import ProductImage31 from "../public/images/radio1.jpg";
+import ProductImage41 from "../public/images/tv.jpeg";
 
 export default function Home() {
   const topCategory = [

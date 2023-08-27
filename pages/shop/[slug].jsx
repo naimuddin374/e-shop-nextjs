@@ -1,17 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Love from "../../assets/img/love.png";
-import Share from "../../assets/img/share.png";
 import DisplayView from "../../components/display_view";
 import Star from "../../components/star";
 import Button from "../../components/ui/Button";
+import Love from "../../public/images/love.png";
+import Share from "../../public/images/share.png";
 
 import { useRouter } from "next/router";
-import ProductImage1 from "../../assets/img/mobile.jpg";
-import ProductImage21 from "../../assets/img/mobile1.jpg";
-import ProductImage31 from "../../assets/img/radio1.jpg";
-import ProductImage41 from "../../assets/img/tv.jpeg";
+import ProductImage1 from "../../public/images/mobile.jpg";
+import ProductImage21 from "../../public/images/mobile1.jpg";
+import ProductImage31 from "../../public/images/radio1.jpg";
+import ProductImage41 from "../../public/images/tv.jpeg";
 
 const product1 = [
   {

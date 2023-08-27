@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Users from "../../../assets/img/users.png";
+import Users from "../../../public/images/users.png";
 const Profile = () => {
   return (
     <div className="col-span-3 bg-white rounded-[7px] p-[20px]">

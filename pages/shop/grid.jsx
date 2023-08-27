@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import GridViewLine from "../../assets/img/view-line.png";
-import GridViewList from "../../assets/img/view-list.png";
+import GridViewLine from "../../public/images/view-line.png";
+import GridViewList from "../../public/images/view-list.png";
 const Grid = ({ grid }) => {
   return (
     <div className="shadow-xl border border-bColor rounded-[7px] px-[20px] py-[10px] mb-[50px]">

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Logo from "../../../assets/img/logo.png";
 import Button from "../../ui/Button";
 const Footer = () => {
   return (
@@ -11,7 +10,7 @@ const Footer = () => {
           <div className="">
             <Link href="/">
               <Image
-                src={Logo}
+                src="/images/logo.png"
                 alt="logo"
                 width={220}
                 height={40}

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import DetailImg from "../../assets/img/headPhone.png";
+import DetailImg from "../../public/images/headPhone.png";
 
 const LeftCartList = () => {
   return (

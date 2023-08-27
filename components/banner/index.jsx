@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import BannerImg from "../../assets/img/poster.png";
 import Button from "../ui/Button";
 
 const Banner = () => {
@@ -23,7 +22,12 @@ const Banner = () => {
             />
           </div>
           <div className="basis-1/2 flex justify-end">
-            <Image width="309" height="343" src={BannerImg} />
+            <Image
+              width="309"
+              height="343"
+              src="/images/poster.png"
+              alt="poster"
+            />
           </div>
         </div>
       </div>

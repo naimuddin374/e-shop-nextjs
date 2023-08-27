@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import Rating from "../../assets/img/rating.png";
-import BannerImg from "../../assets/img/slide-mockup.png";
+import Rating from "../../public/images/rating.png";
+import BannerImg from "../../public/images/slide-mockup.png";
 import Button from "../ui/Button";
 
 const SlideBanner = () => {

@@ -1,12 +1,12 @@
 import Link from "next/link";
 import React, { useState } from "react";
 
-import ProductImage1 from "../../assets/img/mobile.jpg";
-import ProductImage21 from "../../assets/img/mobile1.jpg";
-import ProductImage31 from "../../assets/img/radio1.jpg";
-import ProductImage41 from "../../assets/img/tv.jpeg";
 import Horizontal_product_card from "../../components/ui/card/horizontal_product_card";
 import Product_card from "../../components/ui/card/product_card";
+import ProductImage1 from "../../public/images/mobile.jpg";
+import ProductImage21 from "../../public/images/mobile1.jpg";
+import ProductImage31 from "../../public/images/radio1.jpg";
+import ProductImage41 from "../../public/images/tv.jpeg";
 import Filter from "./filter";
 import Grid from "./grid";
 import Pagination from "./pagination";

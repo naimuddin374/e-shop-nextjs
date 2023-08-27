@@ -1,10 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import Cart from "../../../assets/img/cart.png";
-import Logo from "../../../assets/img/logo.png";
-import Love from "../../../assets/img/love.png";
-import SearchIcon from "../../../assets/img/search.png";
-import User from "../../../assets/img/user.png";
 import Button from "../../ui/Button";
 
 const Top_nav = () => {
@@ -12,12 +7,18 @@ const Top_nav = () => {
     <section className="container mx-auto">
       <div className="flex items-center justify-between mb-[20px]">
         <Link href="/">
-          <Image src={Logo} alt="logo" width={188} height={35} className="" />
+          <Image
+            src="/images/logo.png"
+            alt="logo"
+            width={188}
+            height={35}
+            className=""
+          />
         </Link>
         <div className="flex items-center border rounded-[7px] overflow-hidden border-blue w-[700px] bg-white">
           <Image
-            src={SearchIcon}
-            alt="serach icon"
+            src="/images/search.png"
+            alt="search icon"
             width={23}
             height={23}
             className="mx-[8px]"
@@ -36,14 +37,14 @@ const Top_nav = () => {
         </div>
         <div className="flex items-center">
           <Image
-            src={User}
+            src="/images/user.png"
             alt="User icon"
             width={24}
             height={24}
             className="mx-[15px]  cursor-pointer"
           />
           <Image
-            src={Love}
+            src="/images/love.png"
             alt="Love icon"
             width={24}
             height={24}
@@ -51,7 +52,7 @@ const Top_nav = () => {
           />
           <div className="relative">
             <Image
-              src={Cart}
+              src="/images/cart.png"
               alt="Cart"
               width={24}
               height={24}

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import DetailImg from "../../assets/img/headPhone.png";
-import Love from "../../assets/img/love.png";
-import Rating from "../../assets/img/rating.png";
-import Share from "../../assets/img/share.png";
+import DetailImg from "../../public/images/headPhone.png";
+import Love from "../../public/images/love.png";
+import Rating from "../../public/images/rating.png";
+import Share from "../../public/images/share.png";
 import Section_title from "../section_title";
 import Button from "../ui/Button";
 const Details_product = () => {
