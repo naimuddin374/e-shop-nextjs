@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import DetailImg from "../../assets/img/headPhone.png";
 import Button from "../../components/ui/Button";
-import DetailImg from "../../public/headPhone.png";
 const YourOrder = () => {
   return (
     <div className="col-span-5 bg-white shadow-md rounded">

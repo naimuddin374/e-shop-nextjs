@@ -1,6 +1,5 @@
-import { useState } from "react";
 import Image from "next/image";
-import DetailImg from "../../../public/headPhone.png";
+import DetailImg from "../../../assets/img/headPhone.png";
 import Button from "../../ui/Button";
 const AddToCart = () => {
   return (

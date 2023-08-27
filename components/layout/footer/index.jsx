@@ -1,8 +1,8 @@
-import React from "react";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import Logo from "../../../assets/img/logo.png";
 import Button from "../../ui/Button";
-import Logo from "../../../public/logo.png";
 const Footer = () => {
   return (
     <footer className="bg-LightYellow py-[100px]">

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Rating from "../../public/rating.png";
+import Rating from "../../assets/img/rating.png";
 const Star = () => {
   return (
     <div className="flex items-center">

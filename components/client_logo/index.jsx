@@ -1,9 +1,9 @@
-import React from "react";
 import Image from "next/image";
-import BasicSel from "../../public/BasicSel.png";
-import Meta from "../../public/Meta.png";
-import IconFic from "../../public/IconFic.png";
-import LeyaK from "../../public/LeyaK.png";
+import React from "react";
+import BasicSel from "../../assets/img/BasicSel.png";
+import IconFic from "../../assets/img/IconFic.png";
+import LeyaK from "../../assets/img/LeyaK.png";
+import Meta from "../../assets/img/Meta.png";
 const Client_logo = () => {
   return (
     <section className="my-[70px]">

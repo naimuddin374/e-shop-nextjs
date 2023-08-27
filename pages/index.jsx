@@ -4,76 +4,70 @@ import Client_logo from "../components/client_logo";
 import DisplayView from "../components/display_view";
 import SlideBanner from "../components/slide_banner";
 
-import ProductImage from "../public/GoldPhone-1-300x300 1.png";
-import ProductImage3 from "../public/prodcut6 1.png";
-import ProductImage4 from "../public/product-39 1.png";
-import ProductImage2 from "../public/widetv-300x300 1.png";
+import ProductImage from "../assets/img/GoldPhone-1-300x300 1.png";
+import ProductImage3 from "../assets/img/prodcut6 1.png";
+import ProductImage4 from "../assets/img/product-39 1.png";
+import ProductImage2 from "../assets/img/widetv-300x300 1.png";
 
-
-
-import ProductImage1 from "../public/mobile.jpg";
-import ProductImage21 from "../public/mobile1.jpg";
-import ProductImage31 from "../public/radio1.jpg";
-import ProductImage41 from "../public/tv.jpeg";
+import ProductImage1 from "../assets/img/mobile.jpg";
+import ProductImage21 from "../assets/img/mobile1.jpg";
+import ProductImage31 from "../assets/img/radio1.jpg";
+import ProductImage41 from "../assets/img/tv.jpeg";
 
 export default function Home() {
-
   const topCategory = [
     {
       id: 1,
-      title: 'Mobile',
-      image: ProductImage
+      title: "Mobile",
+      image: ProductImage,
     },
     {
       id: 2,
-      title: 'TV',
-      image: ProductImage2
+      title: "TV",
+      image: ProductImage2,
     },
     {
       id: 1,
-      title: 'Speaker',
-      image: ProductImage3
+      title: "Speaker",
+      image: ProductImage3,
     },
     {
       id: 2,
-      title: 'wathch',
-      image: ProductImage4
-    }
-  ]
-
+      title: "wathch",
+      image: ProductImage4,
+    },
+  ];
 
   const product1 = [
     {
       id: 1,
       image: ProductImage1,
-      title: 'Mobile',
+      title: "Mobile",
       price: 5,
-      disPrice: 8
+      disPrice: 8,
     },
     {
       id: 2,
       image: ProductImage31,
-      title: 'Radio',
+      title: "Radio",
       price: 8,
-      disPrice: 10
+      disPrice: 10,
     },
     {
       id: 3,
       image: ProductImage41,
-      title: 'Tv',
+      title: "Tv",
       price: 6,
-      disPrice: 9
+      disPrice: 9,
     },
     {
       id: 4,
       image: ProductImage21,
-      title: 'mobile',
+      title: "mobile",
       price: 3,
-      disPrice: 6
+      disPrice: 6,
     },
-
-  ]
-
+  ];
 
   return (
     <div>

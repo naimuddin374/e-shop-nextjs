@@ -1,8 +1,7 @@
-import React from "react";
 import Image from "next/image";
+import React from "react";
+import BannerImg from "../../assets/img/poster.png";
 import Button from "../ui/Button";
-import Rating from "../../public/rating.png";
-import BannerImg from "../../public/poster.png";
 
 const Banner = () => {
   return (

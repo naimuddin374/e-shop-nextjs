@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import Cart from "../../../public/cart.png";
-import Logo from "../../../public/logo.png";
-import Love from "../../../public/love.png";
-import SearchIcon from "../../../public/search.png";
-import User from "../../../public/user.png";
+import Cart from "../../../assets/img/cart.png";
+import Logo from "../../../assets/img/logo.png";
+import Love from "../../../assets/img/love.png";
+import SearchIcon from "../../../assets/img/search.png";
+import User from "../../../assets/img/user.png";
 import Button from "../../ui/Button";
 
 const Top_nav = () => {
