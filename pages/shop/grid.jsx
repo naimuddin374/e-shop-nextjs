@@ -1,5 +1,5 @@
-import React from "react";
 import Image from "next/image";
+import React from "react";
 import GridViewLine from "../../public/view-line.png";
 import GridViewList from "../../public/view-list.png";
 const Grid = ({ grid }) => {
@@ -22,6 +22,7 @@ const Grid = ({ grid }) => {
               className="m-[5px] cursor-pointer"
               src={GridViewLine}
               onClick={() => grid("line")}
+              alt="settings"
             />
             <Image
               width="15"
@@ -29,6 +30,7 @@ const Grid = ({ grid }) => {
               className="m-[5px] cursor-pointer"
               src={GridViewList}
               onClick={() => grid("list")}
+              alt="settings"
             />
           </div>
         </div>

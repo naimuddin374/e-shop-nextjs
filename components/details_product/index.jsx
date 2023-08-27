@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import DetailImg from "../../public/headPhone.png";
+import Love from "../../public/love.png";
 import Rating from "../../public/rating.png";
 import Share from "../../public/share.png";
-import Love from "../../public/love.png";
-import Button from "../ui/Button";
 import Section_title from "../section_title";
+import Button from "../ui/Button";
 const Details_product = () => {
   return (
     <>
@@ -33,8 +33,8 @@ const Details_product = () => {
                 </div>
               </div>
               <p className="mt-[30px] ">
-                N.B. Image may differ with actual product's layout, color, size
-                & dimension. No claim will be accepted for image mismatch.
+                {`N.B. Image may differ with actual product's layout, color, size
+                & dimension. No claim will be accepted for image mismatch.`}
               </p>
             </div>
 

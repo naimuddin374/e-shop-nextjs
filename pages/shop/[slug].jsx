@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import DisplayView from "../../components/display_view";
 import Star from "../../components/star";
 import Button from "../../components/ui/Button";
-import DetailImg from "../../public/headPhone.png";
 import Love from "../../public/love.png";
 import Share from "../../public/share.png";
 
@@ -14,66 +13,50 @@ import ProductImage21 from "../../public/mobile1.jpg";
 import ProductImage31 from "../../public/radio1.jpg";
 import ProductImage41 from "../../public/tv.jpeg";
 
-
 const product1 = [
   {
     id: 1,
     image: ProductImage1,
-    title: 'Mobile',
+    title: "Mobile",
     price: 5,
-    disPrice: 8
+    disPrice: 8,
   },
   {
     id: 2,
     image: ProductImage31,
-    title: 'Radio',
+    title: "Radio",
     price: 8,
-    disPrice: 10
+    disPrice: 10,
   },
   {
     id: 3,
     image: ProductImage41,
-    title: 'Tv',
+    title: "Tv",
     price: 6,
-    disPrice: 9
+    disPrice: 9,
   },
   {
     id: 4,
     image: ProductImage21,
-    title: 'mobile',
+    title: "mobile",
     price: 3,
-    disPrice: 6
-  },
-
-]
-
-
-
-
-const productColor = [
-  {
-    id: 1,
-    photo: DetailImg,
-  },
-  {
-    id: 2,
-    photo: Love,
-  },
-  {
-    id: 3,
-    photo: Share,
+    disPrice: 6,
   },
 ];
+
 const Details = () => {
-  const params = useRouter()
+  const params = useRouter();
+  const [filterItem, setFilterItem] = useState(product1[0]);
 
+  useEffect(() => {
+    const selectedItem = product1.filter(
+      (item) => item.id == params.query.slug
+    );
+    if (selectedItem) {
+      setFilterItem(selectedItem);
+    }
+  }, [params.query.slug]);
 
-  const [state, setState] = useState(null);
-  const imageClick = (name) => {
-    setState(name);
-  };
-
-  const filterItem = product1.filter((item) => item.id == params.query.slug)
   return (
     <div>
       {/* Breadcrumb Start */}
@@ -117,18 +100,19 @@ const Details = () => {
               <div className="col-span-10  flex items-center justify-center">
                 <Image
                   width="321"
-                  src={state ? state : filterItem[0].image}
+                  src={filterItem[0]?.image ?? ""}
                   className=""
+                  alt="Product"
                 />
               </div>
             </div>
             <p className="mt-[30px] opacity-70 text-[11px]">
-              N.B. Image may differ with actual product's layout, color, size &
+              N.B. Image may differ with actual product layout, color, size &
               dimension. No claim will be accepted for image mismatch.
             </p>
           </div>
           {/* Left side end*/}
-          {/* ridht side start*/}
+          {/* right side start*/}
 
           <div className="col-span-5 ">
             <div className="flex items-center justify-between mb-[12px]">
@@ -143,12 +127,14 @@ const Details = () => {
                   height="17"
                   src={Share}
                   className="ml-[10px]"
+                  alt="related1"
                 />
                 <Image
                   width="17"
                   height="17"
                   src={Love}
                   className="ml-[10px]"
+                  alt="related2"
                 />
               </div>
             </div>
@@ -186,10 +172,14 @@ const Details = () => {
               </ul>
             </div>
             <div className="price">
-              <span className="font-medium text-[20px]">${filterItem[0].price}</span>
+              <span className="font-medium text-[20px]">
+                ${filterItem[0]?.price}
+              </span>
               <span className="mx-[10px]">|</span>
               <span>
-                <del className="font-medium text-[20px] opacity-75">${filterItem[0].disPrice}</del>
+                <del className="font-medium text-[20px] opacity-75">
+                  ${filterItem[0]?.disPrice}
+                </del>
               </span>
             </div>
             <div className="">

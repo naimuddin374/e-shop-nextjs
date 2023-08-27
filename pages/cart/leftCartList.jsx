@@ -1,5 +1,5 @@
-import React from "react";
 import Image from "next/image";
+import React from "react";
 import DetailImg from "../../public/headPhone.png";
 
 const LeftCartList = () => {
@@ -7,7 +7,10 @@ const LeftCartList = () => {
     <div className="col-span-7 bg-white shadow-md rounded-[7px] p-[30px]">
       {[...Array(2)].map((item, index) => {
         return (
-          <div className="flex items-center justify-between shadow-md p-[12px] mb-3 rounded-[7px]">
+          <div
+            key={index}
+            className="flex items-center justify-between shadow-md p-[12px] mb-3 rounded-[7px]"
+          >
             <div className="flex items-center">
               <Image width="102" src={DetailImg} className="" />
               <div className="ml-[15px]">

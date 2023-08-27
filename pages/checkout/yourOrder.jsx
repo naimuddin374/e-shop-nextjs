@@ -1,7 +1,7 @@
-import React from "react";
 import Image from "next/image";
-import DetailImg from "../../public/headPhone.png";
+import React from "react";
 import Button from "../../components/ui/Button";
+import DetailImg from "../../public/headPhone.png";
 const YourOrder = () => {
   return (
     <div className="col-span-5 bg-white shadow-md rounded">
@@ -10,7 +10,7 @@ const YourOrder = () => {
       </h4>
       <hr className="my-[25px] border-bColor" />
       <div className="flex items-center px-[30px]">
-        <Image width="76" src={DetailImg} className="" />
+        <Image width="76" src={DetailImg} className="" alt="product" />
         <div className="ml-[15px]">
           <p className="text-[19px] opacity-90">Flexible WareLess Head Phone</p>
           <p className="text-[17px] font-light text-blue">

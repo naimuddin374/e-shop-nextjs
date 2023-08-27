@@ -11,41 +11,36 @@ import Filter from "./filter";
 import Grid from "./grid";
 import Pagination from "./pagination";
 
-
 const product1 = [
   {
     id: 1,
     image: ProductImage1,
-    title: 'Mobile',
+    title: "Mobile",
     price: 5,
-    disPrice: 8
+    disPrice: 8,
   },
   {
     id: 2,
     image: ProductImage31,
-    title: 'Radio',
+    title: "Radio",
     price: 8,
-    disPrice: 10
+    disPrice: 10,
   },
   {
     id: 3,
     image: ProductImage41,
-    title: 'Tv',
+    title: "Tv",
     price: 6,
-    disPrice: 9
+    disPrice: 9,
   },
   {
     id: 4,
     image: ProductImage21,
-    title: 'mobile',
+    title: "mobile",
     price: 3,
-    disPrice: 6
+    disPrice: 6,
   },
-
-]
-
-console.log(product1)
-
+];
 const Shop = () => {
   const [state, setState] = useState("line");
   const grid = (gridName) => {

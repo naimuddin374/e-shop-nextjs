@@ -39,7 +39,7 @@ const Sing_in = () => {
                   onclick={() => console.log("hello")}
                 />
                 <p className="text-center font-[21px] mt-[25px] mb-[10px]">
-                  Don't have an account?
+                 {"Don't have an account?"}
                 </p>
 
                 <Button
